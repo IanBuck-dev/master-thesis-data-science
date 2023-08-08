@@ -35,5 +35,5 @@ perform_qc <- function(df, print_result) {
   }
 }
 
-df <- read.csv(file=paste0(path, filename), sep=";", col.names = c("p_id", "time", "ta", "lon", "lat"))
+df <- read.csv(file=paste0(path, filename), sep=";")
 perform_qc(df, TRUE)
